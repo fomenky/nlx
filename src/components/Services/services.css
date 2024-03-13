@@ -1,0 +1,16 @@
+.title-services {
+    font-family: 'General Sans';
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+}
+
+.custom-container-services {
+    background-color: white;
+    padding: 80px;
+}
+
+.custom-skill-col {
+    min-width: 300px; 
+    max-width: 100%;
+  }

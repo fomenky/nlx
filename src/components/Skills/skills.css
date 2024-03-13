@@ -1,0 +1,23 @@
+.custom-card-skills {
+    border-radius:10px;
+    border: none;
+    background-color: #EFEFEF;
+}
+
+.custom-button-show-more{
+    border: none;
+    background-color: unset;
+}
+
+.custom-button-show-more:hover{
+    background-color: unset;
+}
+
+.custom-title-skills {
+    font-weight: 600;
+}
+
+.custom-description-skills {
+    font-size: 12px;
+}
+

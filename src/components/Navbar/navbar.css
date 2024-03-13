@@ -1,0 +1,62 @@
+
+.custom-scrollLink {
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    width: 90%;
+    margin: auto;
+    z-index: 3;
+    max-height: 100px;
+    border-radius: 100px;
+    margin-top: 40px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.custom-logo img{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    left: 15px
+}
+
+.book-consultation img{
+    position: relative;
+    right: 20px;
+}
+
+.custom-scrollLink{
+    color: 'black';
+    text-decoration: none;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .links-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .links-container a, .custom-scrollLink {
+      font-size: 14px;
+    }
+  }

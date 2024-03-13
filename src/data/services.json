@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Data Modeling",
+    "description": "Lorem ipsum dolor sit amet consectetur. Lectus tempus nibh aliquet fringilla. Ut mauris pretium lectus faucibus in netus."
+  },
+  {
+    "id": 2,
+    "title": "Data Analytics",
+    "description": "Lorem ipsum dolor sit amet consectetur. Lectus tempus nibh aliquet fringilla. Ut mauris pretium lectus faucibus in netus."
+  },
+  {
+    "id": 3,
+    "title": "Data Pipelines",
+    "description": "Lorem ipsum dolor sit amet consectetur. Lectus tempus nibh aliquet fringilla. Ut mauris pretium lectus faucibus in netus."
+  }
+]

@@ -1,0 +1,18 @@
+.container-my-team {
+    background-color: white;
+}
+
+.title-my-team {
+    font-family: 'General Sans';
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+.team-divider {
+    border-bottom: 1px solid #ccc;
+    width: 98%; 
+    margin: 0 auto; 
+    
+}

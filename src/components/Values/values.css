@@ -1,0 +1,11 @@
+.container-values {
+    background-color: white;
+    min-height: 750px;
+}
+
+.title-values {
+    font-family: 'General Sans';
+    font-weight: 600;
+    padding: 40px;
+    font-size: 25px;
+}
