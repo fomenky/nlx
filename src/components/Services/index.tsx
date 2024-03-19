@@ -33,11 +33,18 @@ const Services = () => {
             <Carousel.Item key={index}>
               <Row className="justify-content-center">
                 {group.map((item: chunkCardDataType) => (
-                  <Col key={item.id} sm={12} md={6} lg={4} xl={4}>
+                  <Col
+                    key={item.id}
+                    sm={12}
+                    md={6}
+                    lg={4}
+                    xl={4}
+                    className="d-flex justify-content-center"
+                  >
                     <Skills
                       title={item.title}
                       description={item.description}
-                      displayImgButton={false}
+                      displayImgButton={true}
                       onButtonClick={() => handleDisplayDetail(item.id)}
                     />
                   </Col>
