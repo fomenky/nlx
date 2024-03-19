@@ -1,17 +1,52 @@
 [
   {
     "id": 1,
-    "title": "Data Modeling",
-    "description": "Lorem ipsum dolor sit amet consectetur. Lectus tempus nibh aliquet fringilla. Ut mauris pretium lectus faucibus in netus."
+    "title": "Serverless Cloud Architecture",
+    "description": "Design and implement scalable serverless architectures leveraging cloud-native services such as AWS Lambda, Azure Functions, and Google Cloud Functions."
   },
   {
     "id": 2,
-    "title": "Data Analytics",
-    "description": "Lorem ipsum dolor sit amet consectetur. Lectus tempus nibh aliquet fringilla. Ut mauris pretium lectus faucibus in netus."
+    "title": "Cloud-Native Application Development",
+    "description": "Develop custom applications using serverless frameworks like AWS SAM, Serverless Compose, Azure Serverless, and Google Cloud Functions, ensuring optimal performance and cost-effectiveness."
   },
   {
     "id": 3,
-    "title": "Data Pipelines",
-    "description": "Lorem ipsum dolor sit amet consectetur. Lectus tempus nibh aliquet fringilla. Ut mauris pretium lectus faucibus in netus."
+    "title": "API Development and Integration",
+    "description": "Build secure and efficient RESTful APIs and integrate them with your existing systems and third-party services to enable seamless communication and data exchange."
+  },
+  {
+    "id": 4,
+    "title": "Frontend Development",
+    "description": "Create engaging and responsive user interfaces using modern frontend technologies like React, Angular, and Vue.js, ensuring an intuitive and enjoyable user experience."
+  },
+  {
+    "id": 5,
+    "title": "UI/UX Design",
+    "description": "Design visually appealing and user-friendly interfaces with a focus on usability, accessibility, and brand consistency, enhancing the overall user experience and driving user engagement."
+  },
+  {
+    "id": 6,
+    "title": "Mobile App Development",
+    "description": "Develop cross-platform mobile applications for iOS and Android devices using frameworks like React Native and Flutter, providing a consistent user experience across different platforms."
+  },
+  {
+    "id": 7,
+    "title": "Cloud Migration and Modernization",
+    "description": "Migrate legacy applications to the cloud and modernize them using serverless architectures, enabling greater scalability, reliability, and cost savings."
+  },
+  {
+    "id": 8,
+    "title": "DevOps and CI/CD Automation",
+    "description": " Implement DevOps practices and automate the continuous integration and delivery pipeline to streamline development processes, improve collaboration, and accelerate time-to-market using Gitlab or Bitbucket Pipelines and Serverless Compose or Terraform."
+  },
+  {
+    "id": 9,
+    "title": "Cloud Security and Compliance",
+    "description": "Ensure the security and compliance of your cloud infrastructure and applications by implementing best practices, encryption, access controls, and regular audits."
+  },
+  {
+    "id": 10,
+    "title": "Performance Optimization and Monitoring",
+    "description": "Monitor and optimize the performance of your serverless applications, identify bottlenecks, and implement strategies to improve scalability, reliability, and efficiency."
   }
 ]

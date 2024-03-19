@@ -1,22 +1,42 @@
 [
   {
     "id": 1,
-    "title": "Integrity",
-    "description": "Fostering confidence by prioritizing openness and conducting consulting practices with unwavering ethics."
+    "title": "Excellence",
+    "description": "We are committed to excellence in everything we do. From the quality of our work to the level of service we provide, we strive for excellence in every aspect of our business."
   },
   {
     "id": 2,
-    "title": "Result Driven",
-    "description": "Harnessing insights derived from data to propel tangible enhancements in the real world."
+    "title": "Innovation",
+    "description": "Innovation is at the heart of Nebula Logix. We embrace creativity, curiosity, and out-of-the-box thinking to push the boundaries of what's possible and drive meaningful change for our clients."
   },
   {
     "id": 3,
-    "title": "Innovation",
-    "description": "Leveraging the power of AI, automation, and emerging trends to propel and sustain your competitive advantage."
+    "title": "Integrity",
+    "description": "Integrity is non-negotiable for us. We conduct ourselves with honesty, transparency, and integrity in all our interactions, building trust and credibility with our clients and partners."
   },
   {
     "id": 4,
-    "title": "Excellence",
-    "description": "From meticulous analysis to seamless execution, we demonstrate excellence in every intricacy."
+    "title": "Collaboration",
+    "description": "Collaboration is key to our success. We believe in the power of teamwork and collaboration, both within our organization and with our clients and partners, to achieve shared goals and drive mutual success."
+  },
+  {
+    "id": 5,
+    "title": "Continuous Learning",
+    "description": "We are lifelong learners. We embrace continuous learning and professional development, staying ahead of the curve in an ever-evolving industry to deliver cutting-edge solutions and value to our clients."
+  },
+  {
+    "id": 6,
+    "title": "Client-Centricity",
+    "description": "Our clients are at the center of everything we do. We listen to their needs, understand their challenges, and tailor our solutions to meet their specific goals and objectives, ensuring their success is our top priority."
+  },
+  {
+    "id": 7,
+    "title": "Diversity",
+    "description": "We value diversity and inclusivity. We recognize the strength that comes from different perspectives, backgrounds, and experiences, and we actively promote diversity within our organization and in the solutions we deliver."
+  },
+  {
+    "id": 8,
+    "title": "Respect",
+    "description": "We treat everyone with respect and dignity. We value diversity, foster an inclusive environment, and respect the perspectives, ideas, and contributions of all individuals."
   }
 ]

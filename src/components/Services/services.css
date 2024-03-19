@@ -14,3 +14,23 @@
     min-width: 300px; 
     max-width: 100%;
   }
+
+  .carousel-control-next, .carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-indicators {
+    margin: 0px;
+    height: 0px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: black ;
+   }
+
+
+@media (max-width: 768px) {
+    .custom-prev-icon, .custom-next-icon {
+      display: none;
+    }
+  }

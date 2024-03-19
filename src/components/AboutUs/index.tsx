@@ -15,11 +15,12 @@ const AboutUs = () => {
           </Col>
           <Col md={6}>
             <div className="description-about-us">
-              We leverage our profound expertise and champion innovation to
-              intricately design bespoke solutions that address your business
-              challenges. Our seasoned consultants adeptly navigate intricate
-              complexities, guiding you towards achieving unparalleled success
-              within your industry.
+              At Nebula Logix, we are more than just a software consulting
+              company - we are your serverless partners in innovation and
+              growth. With a focus on end-to-end serverless solutions and cloud
+              consulting, we collaborate with clients globally to bring their
+              ideas to life and scale their businesses through innovative
+              software products.
             </div>
           </Col>
         </Row>

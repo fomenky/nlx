@@ -23,7 +23,7 @@ const Skills: React.FC<SkillsProps> = ({
       className="shadow-sm d-flex flex-column custom-card-skills"
     >
       <Card.Body className="d-flex flex-grow-1 flex-column">
-        <div className="d-flex justify-content-between align-items-center mb-5">
+        <div className="d-flex justify-content-between align-items-center mb-4">
           <Card.Title className="custom-title-skills">{title}</Card.Title>
           <Image
             src={circleSkills}
@@ -35,7 +35,7 @@ const Skills: React.FC<SkillsProps> = ({
         </div>
 
         <div className="d-flex justify-content-between align-items-center mt-auto">
-          <Card.Text className="mb-3 custom-description-skills flex-grow-1">
+          <Card.Text className="mb-1 custom-description-skills">
             {description}
           </Card.Text>
           <Button className="custom-button-show-more" onClick={onButtonClick}>
