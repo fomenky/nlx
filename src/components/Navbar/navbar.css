@@ -57,6 +57,14 @@
     }
   
     .links-container a, .custom-scrollLink {
-      font-size: 14px;
+      font-size: 10px;
+    }
+
+    .book-consultation img {
+        width: 100px;
+    }
+
+    .custom-logo img {
+        width: 100px;  
     }
   }

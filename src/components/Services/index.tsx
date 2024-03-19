@@ -37,7 +37,7 @@ const Services = () => {
                     <Skills
                       title={item.title}
                       description={item.description}
-                      displayImgButton={true}
+                      displayImgButton={false}
                       onButtonClick={() => handleDisplayDetail(item.id)}
                     />
                   </Col>

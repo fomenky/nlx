@@ -41,14 +41,14 @@ const Navbar = () => {
         </div>
 
         <div className="book-consultation">
-          <Link href="/">
+          <a target="_blank" href="https://calendly.com/nebulalogix">
             <Image
               src={BookConsultation}
               alt="Book a Consultation"
               width="140"
               height="140"
             />
-          </Link>
+          </a>
         </div>
       </div>
     </header>
