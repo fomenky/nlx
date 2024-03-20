@@ -1,11 +1,20 @@
 .custom-title-support-business {
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 20px;
     font-family: 'Tiempos Headline';
-    font-weight: 550;
+    font-weight: 600;
 }
 
 .custom-description-support-business {
     font-family: 'General Sans';
     font-size: 16px;
+}
+
+.custom-p-support-business {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.custom-p-support-business span {
+    font-weight: normal;
 }

@@ -26,6 +26,7 @@ const Vision = () => {
               layout="responsive"
               width={530}
               height={439}
+              style={{ marginTop: "70px" }}
             />
           </Col>
         </Row>
