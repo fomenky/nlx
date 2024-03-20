@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
 import stepBulding from "@/assets/stepBulding.svg";
 import sendMessage from "@/assets/sendMessage.svg";
 import { Form, Button } from "react-bootstrap";
+import axios from "axios";
+import Popup from "@/utils/Popup";
 
 const ContactUs = () => {
   const formControlStyle = {
@@ -12,6 +14,78 @@ const ContactUs = () => {
     borderRadius: "0",
     marginBottom: "2rem",
     boxShadow: "none",
+  };
+
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [isSubmitSuccess, setIsSubmitSuccess] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [formErrors, setFormErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+
+    setFormErrors({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
+  const validateForm = () => {
+    const errors = {
+      name: formData.name.trim() === "" ? "Full Name is required" : "",
+      email:
+        formData.email.trim() === ""
+          ? "Email is required"
+          : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
+          ? "Incorrect email format"
+          : "",
+      message: formData.message.trim() === "" ? "Message is required" : "",
+    };
+
+    setFormErrors(errors);
+
+    return Object.values(errors).every((error) => error === "");
+  };
+
+  const handleInputChange = (e: any) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFormSubmit = async () => {
+    if (!validateForm()) {
+      return;
+    }
+    try {
+      await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+        formData
+      );
+      resetForm();
+      setShowSuccessModal(true);
+      setIsSubmitSuccess(true);
+    } catch (error) {
+      console.error("Erreur lors de l'envoi du formulaire:", error);
+      setShowSuccessModal(true);
+      setIsSubmitSuccess(false);
+    }
+  };
+
+  const handleCloseSuccessModal = () => {
+    setShowSuccessModal(false);
   };
 
   return (
@@ -28,41 +102,69 @@ const ContactUs = () => {
           </Col>
 
           <Col md={6}>
-            <Form className="my-4 mt-5">
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+            <div className="my-4 mt-5">
+              <Col className="mb-3">
                 <Form.Control
                   style={formControlStyle}
                   type="text"
+                  name="name"
+                  value={formData.name}
                   placeholder="Full Name"
-                  required
+                  onChange={handleInputChange}
                 />
-              </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicPassword">
+                {formErrors.name && (
+                  <div style={{ color: "red" }}>{formErrors.name}</div>
+                )}
+              </Col>
+
+              <Col className="mb-3" controlId="formBasicPassword">
                 <Form.Control
                   style={formControlStyle}
                   type="email"
+                  name="email"
+                  value={formData.email}
                   placeholder="Email"
-                  required
+                  onChange={handleInputChange}
                 />
-              </Form.Group>
+                {formErrors.email && (
+                  <p style={{ color: "red" }}>{formErrors.email}</p>
+                )}
+              </Col>
 
-              <Form.Group className="mb-3" controlId="formBasicMessage">
+              <Col className="mb-3" controlId="formBasicMessage">
                 <Form.Control
                   style={formControlStyle}
                   as="textarea"
                   rows={3}
+                  name="message"
+                  value={formData.message}
                   placeholder="Message"
-                  required
+                  onChange={handleInputChange}
                 />
-              </Form.Group>
+                {formErrors.message && (
+                  <div style={{ color: "red" }}>{formErrors.message}</div>
+                )}
+              </Col>
 
-              <Button className="button-contact-us" type="submit">
+              <Button className="button-contact-us" onClick={handleFormSubmit}>
                 <Image src={sendMessage} alt="" width="150" />
               </Button>
-            </Form>
+            </div>
           </Col>
         </Row>
+
+        <Popup
+          title={isSubmitSuccess ? "Sending success" : "Failed to send"}
+          msg={
+            isSubmitSuccess
+              ? "Your message has been sent successfully. We will contact you !"
+              : "Your message could not be sent. Try again later !"
+          }
+          onClick={handleCloseSuccessModal}
+          onHide={handleCloseSuccessModal}
+          show={showSuccessModal}
+        />
       </Container>
     </section>
   );
