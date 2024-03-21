@@ -19,9 +19,7 @@ const SupportBusiness = () => {
           />
         </Col>
         <Col xs={12} md={6} className="mt-5 mt-md-2">
-          <div className="custom-title-support-business">
-            We are here to support your business
-          </div>
+          <div className="custom-title-support-business">Why Choose Us:</div>
           <p className="custom-p-support-business">
             Expertise in Serverless Cloud Solutions:{" "}
             <span>
