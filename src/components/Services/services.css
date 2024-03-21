@@ -23,11 +23,12 @@
     background-color: black ;
    }
 
+.custom-prev-icon, .custom-next-icon {
+    display: none;
+  }
 
+  
 @media (max-width: 768px) {
-    .custom-prev-icon, .custom-next-icon {
-      display: none;
-    }
 
     .custom-container-services {
         padding: 40px 20px;

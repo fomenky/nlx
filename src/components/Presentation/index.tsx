@@ -19,9 +19,9 @@ const Presentation = () => {
             cloud consulting services, delivering tailored strategies and
             implementation plans to drive your digital transformation.
           </div>
-          <Link href="#">
-            <Image src={learnMore} alt="Learn more" width="150" height="150" />
-          </Link>
+          <a target="_blank" href="https://calendly.com/nebulalogix">
+            <Image src={learnMore} alt="Learn more" width="160" height="160" />
+          </a>
         </Col>
 
         <Col md={6} className="image-section">
