@@ -38,7 +38,7 @@ const Skills: React.FC<SkillsProps> = ({
           <Card.Text className="mb-1 custom-description-skills">
             {description}
           </Card.Text>
-          <Button className="custom-button-show-more" onClick={onButtonClick}>
+          {/* <Button className="custom-button-show-more" onClick={onButtonClick}>
             {displayImgButton && (
               <Image
                 src={showMore}
@@ -48,7 +48,7 @@ const Skills: React.FC<SkillsProps> = ({
                 layout="fixed"
               />
             )}
-          </Button>
+          </Button> */}
         </div>
       </Card.Body>
     </Card>
