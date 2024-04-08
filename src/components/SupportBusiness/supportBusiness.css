@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "General Sans Bold";
+    src: url("../../assets/fonts/GeneralSans-Bold.ttf")format("truetype"),
+    url("../../assets/fonts/GeneralSans-Bold.woff2")format("woff2"),
+    url("../../assets/fonts/GeneralSans-Bold.woff")format("woff") ;
+    font-style: bold;
+  }
+
+
+
 .custom-title-support-business {
     font-size: 35px;
     margin-bottom: 20px;
@@ -5,17 +15,14 @@
     font-weight: 600;
 }
 
-.custom-description-support-business {
-    font-family: 'General Sans';
-    font-size: 16px;
-}
 
 .custom-p-support-business {
-    font-weight: bold;
+    font-family: 'General Sans Bold';
     font-size: 16px;
 }
 
 .custom-p-support-business span {
+    font-family: 'General Sans';
     font-weight: normal;
     font-size: 15px;
 }
