@@ -71,7 +71,7 @@ const ContactUs = () => {
     }
     try {
       await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+        `https://dlt7vckjvtg3qzxe27hssf23340fglzu.lambda-url.us-east-1.on.aws/`,
         formData
       );
       resetForm();
