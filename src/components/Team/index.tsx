@@ -16,7 +16,13 @@ const Team: React.FC<TeamProps> = ({
 }) => {
   return (
     <>
-      <Image src={imageSrc} alt={altText} width={250} height={250} />
+      <Image
+        style={{ borderRadius: "15px" }}
+        src={imageSrc}
+        alt={altText}
+        width={250}
+        height={250}
+      />
       <div className="title-team">{title}</div>
       <div className="description-team">{description}</div>
     </>

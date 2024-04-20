@@ -3,34 +3,34 @@ import Team from "../Team";
 import { Container, Row, Col } from "react-bootstrap";
 
 import fomenky from "@/assets/teams/fomenky.png";
+import irene from "@/assets/teams/irene.png";
 import ouboti from "@/assets/teams/ouboti.png";
-import miriam from "@/assets/teams/miriam.png";
-import georgia from "@/assets/teams/georgia.png";
+import timbet from "@/assets/teams/timbet.png";
 
 const teams = [
   {
     id: 1,
     img: fomenky,
     title: "Ache Fomenky",
-    description: "Partner",
+    description: "Founder/Consulting Partner",
   },
   {
     id: 2,
-    img: ouboti,
-    title: "Ouboti Djaneye",
-    description: "Partner",
+    img: irene,
+    title: "Irene Ogutu",
+    description: "Co-Founder/Consulting Partner",
   },
   {
     id: 3,
-    img: miriam,
-    title: "Mirian Achonwa",
-    description: "Partner",
+    img: ouboti,
+    title: "Dr Ouboti Djaneye",
+    description: "Consulting Partner",
   },
   {
     id: 4,
-    img: georgia,
-    title: "Georgia Clarence",
-    description: "Partner",
+    img: timbet,
+    title: "Timbet Ekanem",
+    description: "Consulting Partner",
   },
 ];
 
